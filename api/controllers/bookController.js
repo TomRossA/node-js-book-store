@@ -35,11 +35,11 @@ exports.read_a_book = function(req, res) {
 exports.update_a_book = function(req, res) {
     var books = storage.getStorage(STORAGE_NAME);
     var book_id = req.params.bookId;
-    console.log(book_id);
     if (books[book_id]) {
-        books[book_id] = new Book(req.body);
-        //todo:: remove hack
-        books[book_id].id = book_id;
+        var item = books[book_id];
+        for(var key in req.body) {
+            item[key] = item[key] ? req.body[key] : item[key];
+        }
         res.json(books[book_id]);
     } else {
         res.send({error: 'Book not found'});
