@@ -1,0 +1,32 @@
+{
+  "name": "node-js-book-store",
+  "version": "1.0.0",
+  "description": "Simple RESTful Node.JS server to run react-redux-book-store app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomRossA/node-js-book-store.git"
+  },
+  "keywords": [
+    "RESTful",
+    "REST",
+    "API",
+    "NodeJS",
+    "Sample"
+  ],
+  "author": "Anton Ayvarov",
+  "license": "MIT",
+  "homepage": "https://github.com/TomRossA/node-js-book-store.git#readme",
+  "devDependencies": {
+    "nodemon": "~1.17.3"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "express": "~4.16.3",
+    "file-system": "~2.2.2",
+    "uuid": "~3.2.1"
+  }
+}
