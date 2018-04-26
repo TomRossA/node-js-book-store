@@ -3,10 +3,8 @@ var uuid = require('uuid');
 function BookStore(params) {
     this.id = uuid.v4();
     this.name = params.name || '';
-    this.location = { 
-        latitude: params.lat || '', 
-        longitude: params.long || ''
-    };
+    this.lat = params.lat || '';
+    this.long = params.long || '';
     this.about = params.about || '';
     this.books = [];
 }

@@ -36,8 +36,11 @@ exports.update_a_store = function(req, res) {
     var bookstores = storage.getStorage(STORAGE_NAME);
     var store_id = req.params.storeId;
     if (bookstores[store_id]) {
-        bookstores[store_id] = new BookStore(req.body);
-        res.json(bookstores[store_id]);
+        var item = bookstores[book_id];
+        for(var key in req.body) {
+            item[key] = item[key] ? req.body[key] : item[key];
+        }
+        res.json(bookstores[book_id]);
     } else {
         res.send({error: 'Book store not found'});
     }
