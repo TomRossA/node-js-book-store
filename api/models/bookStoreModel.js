@@ -1,34 +1,34 @@
 var uuid = require('uuid');
 
 function BookStore(params) {
-    this.id = uuid.v4();
-    this.name = params.name || '';
-    this.lat = params.lat || '';
-    this.long = params.long || '';
-    this.about = params.about || '';
-    this.books = [];
+  this.id = uuid.v4();
+  this.name = params.name || '';
+  this.lat = params.lat || '';
+  this.long = params.long || '';
+  this.about = params.about || '';
+  this.books = [];
 }
 
 var p = BookStore.prototype;
 
 p.getId = function() {
-    return this.id;
-}
+  return this.id;
+};
 
 p.getName = function() {
-    return this.name;
-}
+  return this.name;
+};
 
 p.getLocation = function() {
-    return this.location;
-}
+  return this.location;
+};
 
 p.getAbout = function() {
-    return this.about;
-}
+  return this.about;
+};
 
 p.getBooks = function() {
-    return this.books;
-}
+  return this.books;
+};
 
 module.exports = BookStore;

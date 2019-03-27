@@ -23,12 +23,12 @@ npm start
 
 ## Authors
 
-* **Anton Ayvarov** - *Frontend developer* - [TomRossA](https://github.com/TomRossA)
+* **Anton Ayvarov** - *Frontend developer* - [ayvaroff](https://github.com/ayvaroff)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is unlicensed.
 
 ## Acknowledgments
 
-* Initial book information was teken from here [Alpina Book](https://www.alpinabook.ru)
+* Initial book information was taken from here [Alpina Book](https://www.alpinabook.ru)

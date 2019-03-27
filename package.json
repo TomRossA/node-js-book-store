@@ -18,15 +18,15 @@
     "Sample"
   ],
   "author": "Anton Ayvarov",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "homepage": "https://github.com/TomRossA/node-js-book-store.git#readme",
   "devDependencies": {
-    "nodemon": "~1.17.3"
+    "nodemon": "^1.18.10"
   },
   "dependencies": {
-    "body-parser": "~1.18.2",
-    "express": "~4.16.3",
-    "file-system": "~2.2.2",
-    "uuid": "~3.2.1"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "file-system": "^2.2.2",
+    "uuid": "^3.3.2"
   }
 }
